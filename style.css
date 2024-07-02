@@ -1,63 +1,80 @@
 body {
-    background: rgb(16, 0, 27);
-    color: white;
-    margin: 0;
+  background: linear-gradient(rgba(16, 0, 27, 0.815), rgba(20, 1, 36, 0.979)) fixed ,url("IMG/problemas-ecológicos-cuidado-del-medio-ambiente.jpg") fixed;
+  color: white;
+  margin: 0;
 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 100;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 100;
 }
 
 header {
-    height: 15vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .primaryBG {
-    background: rgb(16, 0, 27);
+  background: rgb(16, 0, 27);
 }
 .secondaryBG {
-    background: rgb(31, 0, 63);
+  background: rgb(31, 0, 63);
 }
 .highlightBG {
-    background: rgb(255, 196, 0);
-    color: black;
+  background: rgb(255, 196, 0);
+  color: black;
 }
 .highlightBorder {
-    background: rgb(16, 0, 27);
-    border: 1px solid rgb(255, 196, 0);
-    color: rgb(255, 196, 0);
+  background: rgb(16, 0, 27);
+  border: 1px solid rgb(255, 196, 0);
+  color: rgb(255, 196, 0);
 }
 
 .logoContainer {
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 35vw;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35vw;
 }
 
 .logo {
-    font-size: 3vw;
-    padding: 1%;
+  font-size: 3vw;
+  padding: 1%;
 }
 
 .logoText {
-    font-size: 3vw;
-    display: block;
+  font-size: 3vw;
+  display: block;
 }
 
 section {
-    margin: 1%;
-    padding: .5%;
-    color: white;
+  margin: 1%;
+  padding: 0.5%;
+  color: white;
 }
 
-section > p, section > h2, section > ul {
-    color: white;
+section > p,
+section > h2,
+section > ul {
+  color: white;
 }
 
 .title {
-    font-weight: bold;
+  font-weight: bold;
+}
+
+
+ul > li > ul {
+    margin-bottom: 3vh;
+}
+
+@media (max-width:600px) {
+    .logoContainer {
+        width: auto;
+    }
+    .logoText, .logo {
+        font-size: 7vw;
+    }
 }
